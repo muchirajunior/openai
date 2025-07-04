@@ -1,7 +1,8 @@
 from openai import OpenAI
 from dotenv import load_dotenv
 
-load_dotenv()
+import os
+os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY").encode('utf-8').decode('ascii', 'ignore')
 
 client = OpenAI()
 

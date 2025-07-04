@@ -12,4 +12,4 @@ response = client.responses.create(
   input="Tell me a three sentence bedtime story about a unicorn."
 )
 
-print(response)
+print(response.output[0].content[0].text)

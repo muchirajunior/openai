@@ -8,7 +8,7 @@ os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY").encode('utf-8').decod
 client = OpenAI()
 
 response = client.responses.create(
-    model="gpt-4.1",
+    model="gpt-3.5-turbo-0125",
     input=[
         {
             "role": "user",

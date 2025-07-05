@@ -8,7 +8,7 @@ client = OpenAI()
 
 
 response = client.responses.create(
-  model="gpt-4.1",
+  model="gpt-3.5-turbo-0125",
   input="Tell me a three sentence bedtime story about a unicorn."
 )
 

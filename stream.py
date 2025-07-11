@@ -13,4 +13,6 @@ response = client.responses.create(
 )
 
 for event in response:
-  print(event)
+  print(event,flush=True)
+  print('\n', flush=True)  # Print a newline after each event
+
